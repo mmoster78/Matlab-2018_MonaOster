@@ -67,17 +67,5 @@ disp(vectc1);
 vectd= [10:-2:-4];
 disp(vectd);
 
-vectd1=linspace(10,-4,8);
+vectd1=linspace(10,,5);
 disp(vectd1);
-
-vecte= [0:3.1416:15.7080];
-disp(vecte);
-
-vecte1=linspace(0,15.7080,6);
-disp(vecte1);
-
-vectf= [0:pi:5*pi];
-disp(vectf);
-
-vectf1=linspace(0,5*pi,6);
-disp(vectf1);
