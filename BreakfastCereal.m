@@ -46,38 +46,56 @@ b = str(id2);
 disp (b);
 
 %% Q 2.3
-vecta = [1:10];
-disp(vecta);
+vecta = [1:10]
 
-vecta1=linspace(1,10,10);
-disp(vecta1);
+vecta1=linspace(1,10,10)
 
-vectb= [10:2:18];
-disp(vectb);
+vectb= [10:2:18]
 
-vectb1=linspace(10,18,5);
-disp(vectb1);
+vectb1=linspace(10,18,5)
 
-vectc= [19:-1:15];
-disp(vectc);
+vectc= [19:-1:15]
 
-vectc1=linspace(19,15,5);
-disp(vectc1);
+vectc1=linspace(19,15,5)
 
-vectd= [10:-2:-4];
-disp(vectd);
+vectd= [10:-2:-4]
 
-vectd1=linspace(10,-4,8);
-disp(vectd1);
+vectd1=linspace(10,-4,8)
 
-vecte= [0:3.1416:15.7080];
-disp(vecte);
+vecte= [0:3.1416:15.7080]
 
-vecte1=linspace(0,15.7080,6);
-disp(vecte1);
+vecte1=linspace(0,15.7080,6)
 
-vectf= [0:pi:5*pi];
-disp(vectf);
+vectf= [0:pi:5*pi]
 
-vectf1=linspace(0,5*pi,6);
-disp(vectf1);
+vectf1=linspace(0,5*pi,6)
+%% Q 2.4
+str = 'aaaaaaaaaaaaaaaaaaaa';
+
+V5=(3:3:20);
+str(V5)=['c' 'c' 'c' 'c' 'c' 'c']
+
+V6=(2:3:20);
+str(V6) = ['b' 'b' 'b' 'b' 'b' 'b' 'b']
+
+str(3)
+
+V7=(4:6);
+str(V7) = ['d' 'e' 'f']
+
+%V8=([10:12 16:18]);
+str([10:12 16:18]) = ['d' 'e' 'f' 'd' 'e' 'f']
+
+str([6 12 18])
+
+%% Q 2.5
+
+exper = linspace(12,59.97,40);
+exper(5)
+exper(end)
+
+%% Q 2.6
+resp ='rerekererererererererererererererererere';
+idx=find(ismember(resp,'k'))
+resp(5)=['r']
+
