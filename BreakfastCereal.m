@@ -90,7 +90,8 @@ str([6 12 18])
 
 %% Q 2.5
 
-exper = linspace(12,59.97,40);
+exper = linspace(12,59.97,40); % should be 20 measurements, starting 1.2, also separated by 2.36 seconds
+exper=1.2:
 exper(5)
 exper(end)
 
