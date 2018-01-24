@@ -73,14 +73,14 @@ str = 'xxxxxxxxxxxxxxxxxxxx';
 % a) Use indexing to make the 2, 5, 8th and so on ... letters in the string "z" and the 3rd, 6th and 9th and so on ... letter "p".  I.e. "xzpxzpxzpxzpxzpxzpxz"
 
 V1=(2:3:20);
-str(V1)=['z' 'z' 'z' 'z' 'z' 'z' 'z']
+str(V1)=['z'] % no need to make the left hand side match if a single number/character
 V2 = (3:3:20);
-str(V2)=['p' 'p' 'p' 'p' 'p' 'p']
+str(V2)=['p']
 
 
 % b) make the 5th , 6th  and 7th letters ‘r’.
 
-str([5:7]) = ['r' 'r' 'r']
+str([5:7]) = ['r']
 
 % c) Demonstrate that the eight letter in the string is a 'z'
 
@@ -99,7 +99,7 @@ str1([6 13 17])
 % You ran an experiment where you took 20 measurements every 2.36 seconds starting 1.2 seconds into the experiment.
 % a) Create a vector that describes the moments in time that these measurements were taken.
 
-exper = linspace(1.2,(2.36*20)-1.2,20)
+exper = linspace(1.2,(2.36*20)-1.2,20) % nice math!
 
 % b) When was the fifth measurement taken?
 
@@ -118,7 +118,7 @@ exper(end)
 
 stimlist='hhhhhhhhhhhhhhhh';
 V3 = [1 2 6 7 10 13 14 15]
-stimlist(V3)= ['s' 's' 's' 's' 's' 's' 's' 's']
+stimlist(V3)= ['s']
 s=find(stimlist == 's')
 h=find(stimlist == 'h')
 
