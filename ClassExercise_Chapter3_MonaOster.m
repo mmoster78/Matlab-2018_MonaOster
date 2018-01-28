@@ -16,10 +16,12 @@ size(mat)
 % I thought it would add one to each cell but now that I see what it did I
 % realize that to add 1 to each place I would have to do some matrix math
 
+% It does add 1 to each cell??? Does it make sense to you.
+
 %b) Guess what you get when you type:
 
 % 10-mat
-I thought this command deletes each cell in the matrix from 10. And this is what it did
+%I thought this command deletes each cell in the matrix from 10. And this is what it did
 
 % c) Use the command min to calculate the minimum of each column of mat
 min(mat)
@@ -110,7 +112,7 @@ heights = [66 68 65 70 65]';
 %
 % a) Find the average of these heights by adding the heights and dividing by 5
 
-(sum(heights))/5
+sum(heights)/5
 
 % b) use Matlab’s ‘mean’ function to get the same number
 mean(heights)
