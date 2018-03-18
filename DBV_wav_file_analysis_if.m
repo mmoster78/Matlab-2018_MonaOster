@@ -117,5 +117,6 @@ for i = 1:length(vowelList)
     ct=ct+1;
     end
 end
+cd ../../
 xlswrite('AS100_12TMR.xlsx', cellArray); %write data
 
