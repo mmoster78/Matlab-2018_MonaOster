@@ -63,14 +63,8 @@ set(a2, 'YLim', [0 1.2])
 % ================================%
 % QUESTION 1. Add a stacked bar plot in this subplot. 
 % use >doc bar for help or try this code as an example
-y = [1 2 3; 4 5 6];
-ax1 = subplot(2,1,1);
-bar(ax1,y)
-ax2 = subplot(2,1,2);
-bar(ax2,y,'stacked')
-
-a3=subplot(2,2,3)
-
+ax1 = subplot(2,2,3);
+bar([women_pc women_apple; men_pc men_apple],'stacked')
 
 
 % ================================% 
@@ -106,7 +100,7 @@ ylabel('grade')
 % replaces facebook friends with the number of gaming hours 
 gamehours_header=find(strcmp(headers,'games_hours'));
 subplot(1,3,2)
-plot([data{:,gameshours_header}], [data{:, grade_header}], 'ko');
+plot([data{:,gamehours_header}], [data{:, grade_header}], 'ko');
 xlabel('number of gaming hours')
 ylabel('grade')
 
@@ -119,7 +113,7 @@ ylabel('grade')
 sleep_header=find(strcmp(headers,'sleep'));
 
 subplot(1,3,3)
-plot([data{:,gameshours_header}], [data{:, sleep_header}], 'ko');
+plot([data{:,gamehours_header}], [data{:, sleep_header}], 'ko');
 xlabel('number of gaming hours')
 ylabel('hours of sleep')
 
@@ -129,7 +123,7 @@ ylabel('hours of sleep')
 % facebookfriends
 
 figure(3);
-[X,Y,Z] = meshgrid([data{:,gameshours_header}], [data{:, sleep_header}],[data{:,facebook_header}])
+[X,Y,Z] = meshgrid([data{:,gamehours_header}], [data{:, sleep_header}],[data{:,facebook_header}]);
 xlabel('number of gaming hours')
 ylabel('hours of sleep')
 zlabel('Facebook friends')
